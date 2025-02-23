@@ -1,23 +1,20 @@
 ## AWS IAM: Criando e Acessando um bucket S3 com permissão de Somente Leitura
 
-📌 **Objetivo**
+ **Objetivo**
 
 Criar um usuário IAM que pode apenas visualizar os conteúdos dos buckets S3, utilizando o console da AWS. Configurar todo o serviço utilizando o Terraform como IAC.
 
-📍 **Cenário**
+ **Cenário**
 
 Um analista de dados precisa visualizar os arquivos armazenados nos buckets S3, mas não deve modificar nada, nem ter acesso a outros recursos da AWS.
 
-⚙️ **Configuração**
+ **Configuração**
 
 ### Criar um usuário IAM no AWS.
 
 Atribuir uma política personalizada com permissões somente leitura para o S3.
-
 Garantir que o usuário tenha acesso ao console da AWS.
-
-🛠️ O usuário não poderá excluir, modificar ou enviar arquivos para os buckets.
-
+O usuário não poderá excluir, modificar ou enviar arquivos para os buckets.
 A política pode ser ajustada para limitar o acesso a buckets específicos.
 
 ### Segue toda a infraestrutura via Terraform:
