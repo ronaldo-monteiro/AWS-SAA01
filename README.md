@@ -36,7 +36,7 @@ resource "aws_s3_bucket" "example" {
 resource "aws_s3_object" "example_file" {
   bucket = aws_s3_bucket.example.id
   key    = "TesteLab1.txt"  # Nome do arquivo no S3
-  source = "/home/ronaldo/Turma DPCN 10/LAB01/TesteLab1.txt" # Caminho do arquivo local  
+  source = "/home/ronaldo/Turma DPCN 10/LAB01/TesteLab1.txt" 
 }
 
 resource "aws_s3_bucket_versioning" "example_versioning" {
